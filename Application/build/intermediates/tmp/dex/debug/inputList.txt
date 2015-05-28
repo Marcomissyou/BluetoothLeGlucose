@@ -1,0 +1,7 @@
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\classes\debug
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-35a268182a9a6dfa7465ba05e3fca1b1bd723706.jar
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-d187887f4a00d32aac63dda4d5cb829700a5e07d.jar
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\classes-3ff07fef12703dcc355142f4e664c1c1e80742b7.jar
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\classes-3a4b3aa72d7f574d261cf4092ef548ad89c534b9.jar
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-341b41aaddc5db72ab1c8cb85f767465a9788d6b.jar
+D:\Android Studio\workspace\BluetoothLeGlucose\Application\build\intermediates\pre-dexed\debug\classes-2e721e7fb865c0a019c09dd2b8c71bb3cd8c7e00.jar
