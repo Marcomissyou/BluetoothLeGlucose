@@ -138,8 +138,8 @@ public class BluetoothLeService extends Service {
                 unit = "kg/L";
                 Log.d(TAG, "kg/L");
             }
-            int SequenceNumber = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_SINT16, 1);
-            int Year = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_SINT16,3);
+            int SequenceNumber = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT16, 1);
+            int Year = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT16,3);
             int Month = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT8, 5);
             int Day = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT8, 6);
             int Hours = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT8, 7);
@@ -152,7 +152,7 @@ public class BluetoothLeService extends Service {
             Log.d(TAG, String.format("Glucose measured value: %d", glucoseValue));
             StringBuilder GluValue = new StringBuilder(2);
             intent.putExtra(EXTRA_DATA, GluValue.append(glucoseValue).append(" ").append(unit).toString());
-            intent.putExtra(EXTRA_DATE, dateString.append(Year).append(".").append(Month).append(".").append(Day).append(".").append(Hours).append(".").append(Minutes).append(".").append(Seconds).toString());
+            intent.putExtra(EXTRA_DATE, dateString.append(" Date:").append(Year).append(".").append(Month).append(".").append(Day).append(" Time:").append(Hours).append(".").append(Minutes).append(".").append(Seconds).toString());
             intent.putExtra(SEQUENCENUMBER,String.valueOf(SequenceNumber));
         } else if (UUID_GLUCOSE_FEATURE.equals(characteristic.getUuid())) {
             int GluFeatureValue = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_SINT16, 0);
